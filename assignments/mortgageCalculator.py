@@ -13,8 +13,19 @@ amount = int(input("Enter the principal amount : "))
 interest = int(input("Enter the annual interest rate : "))
 duration = int(input("Enter the duration in years : "))
 
-initialCalcultion = amount /  + interest + interest * duration
 
-monthly_payment = initialCalcultion /  interest  * duration 
+actual_interest = (interest *1/100)/12
 
-print("Your monthly payment is ", monthly_payment)
+initialCalcultion =  actual_interest * ((1 +  actual_interest)**(duration *12))
+
+finalCalculation =  ((1 + actual_interest)**(duration*12)) - 1
+
+amountCalculation =  initialCalcultion / finalCalculation
+
+monthly_payment = amount * amountCalculation
+
+print("Your monthly payment is $",round(monthly_payment,2))
+
+
+
+
