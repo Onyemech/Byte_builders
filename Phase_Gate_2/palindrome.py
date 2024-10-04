@@ -14,8 +14,6 @@ def palindrome ():
 	if reversed_num == numbers:
 		return True
 	elif reversed_num != numbers:
-		return False
-
-	print("New reversed is ",reversed_num)
-	
+		print("False")
+		
 palindrome ()

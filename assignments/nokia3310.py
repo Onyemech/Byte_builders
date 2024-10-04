@@ -169,7 +169,7 @@ def CallRegister():
 
 	print("Call Register");
 
-	userInput = int(inputprint("\n1->Missed calls\n2->Received calls\n3->Dialled numbers\n4->Erase recent call lists\n5->Show call duration\n6->Show all costs\n7->Call cost settings\n8->Prepaid credit\n"))
+	userInput = int(inputprint("\n1->Missed calls\n2->Received calls\n3->Dialled numbers\n4->Erase recent call lists\n5->Show call duration\n6->Show all costs\n7->Call cost settings\n8->Prepaid credit\n0->Back"))
 
 
 
