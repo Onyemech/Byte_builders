@@ -1,4 +1,4 @@
-list = {20, 15, 22, 23, 30, 41, 38, 8, 40, 10 , 12}
+list = {20, 15, 3, 23, 30, 6, 38, 8, 9, 10 }
 
 counter = 0
 sum_even = 0
@@ -7,19 +7,26 @@ third_position = 0
 
 for numbers in list:
 	counter += 1
-print("Your list is ", counter - 1,"in number")
+print("Your list is ", counter ,"in number")
 
 for numbers in range(len(list)):
 	if numbers % 2 == 0:
 		sum_even +=  numbers 
-print(sum_even)
+print("The sum of all the elements in even position is ",sum_even)
 
 for numbers in range(len(list)):
 	if numbers % 2 != 0:
 		sum_odd +=  numbers 
-print(sum_odd)
+print("The sum of all the elements in odd position is ",sum_odd)
 
 for numbers in range(len(list)):
 	if numbers % 3 == 0:
 		third_position +=  numbers 
-print(sum_odd)
+print("The sum of all the elements in third position is  ",third_position)
+
+get_total = 0
+
+for numbers in list:
+	 get_total += numbers
+average = get_total / counter
+print("The average of all the elements is ",average)
