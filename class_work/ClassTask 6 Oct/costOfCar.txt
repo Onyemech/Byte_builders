@@ -1,5 +1,0 @@
-amount = float(input("Enter your amount : "))
-
-if amount > 10_000_000:
-	charge_percent = amount * 20 // 100
-	print ("Your duty charge percentage is ", charge_percent)
